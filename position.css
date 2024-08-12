@@ -241,7 +241,7 @@ h1 {
   background: unset;
 }
 
-.merge {
+.menggabungkan {
   display: grid;
   grid-template-columns: repeat(52, 1fr);
   grid-template-rows: repeat(3, 1fr) 25px;
