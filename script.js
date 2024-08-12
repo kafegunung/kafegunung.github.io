@@ -31,19 +31,19 @@ const forkList = {
 // true = Hard forks - uses color(s)
 // false = TTD & extra protocol - uses dark shading
 const statusList = {
-    merge: [
-        ["mergeA", true, { teal: 0, green: 100, purple: 0, blue: 0, red: 0 }, {weighting: 1.2}],  // Beacon chain launch
-        ["mergeB", true, { teal: 0, green: 100, purple: 0, blue: 0, red: 0 }, {weighting: 1}],    // Warmup fork (Altair)
-        ["mergeC", true, { teal: 0, green: 100, purple: 0, blue: 0, red: 0 }, {weighting: 1.8}],  // Merge! No more PoW
-        ["mergeD", true, { teal: 0, green: 0, purple: 100, blue: 0, red: 0 }, {weighting: 1}],    // Withdrawals
-        ["mergeE", true, { teal: 100, green: 0, purple: 0, blue: 0, red: 0 }, {weighting: 1}],    // Distributed validators
-        ["mergeF", false, 60, {weighting: 1}],                                                    // Secret leader election
-        ["mergeG", false, 50, {weighting: 1.1}],                                                  // Per-slot participant selection
-        ["mergeH", false, 50, {weighting: 1}],                                                    // SSF specification
-        ["mergeI", true, { teal: 0, green: 0, purple: 0, blue: 0, red: 0 }, {weighting: 1.1}],    // Implmentation
-        ["mergeJ", false, 20, {weighting: 1.1}],                                                  // Single slot finality (SSF)
-        ["mergeK", true, { teal: 0, green: 0, purple: 0, blue: 10, red: 40 }, {weighting: 1.1}],  // Increase validator count
-        ["mergeL", false, 20, {weighting: 1}],                                                    // Ideal quantum-safe signatures
+    menggabungkan: [
+        ["menggabungkanA", true, { teal: 0, green: 100, purple: 0, blue: 0, red: 0 }, {weighting: 1.2}],  // Beacon chain launch
+        ["menggabungkanB", true, { teal: 0, green: 100, purple: 0, blue: 0, red: 0 }, {weighting: 1}],    // Warmup fork (Altair)
+        ["menggabungkanC", true, { teal: 0, green: 100, purple: 0, blue: 0, red: 0 }, {weighting: 1.8}],  // Merge! No more PoW
+        ["menggabungkanD", true, { teal: 0, green: 0, purple: 100, blue: 0, red: 0 }, {weighting: 1}],    // Withdrawals
+        ["menggabungkanE", true, { teal: 100, green: 0, purple: 0, blue: 0, red: 0 }, {weighting: 1}],    // Distributed validators
+        ["menggabungkanF", false, 60, {weighting: 1}],                                                    // Secret leader election
+        ["menggabungkanG", false, 50, {weighting: 1.1}],                                                  // Per-slot participant selection
+        ["menggabungkanH", false, 50, {weighting: 1}],                                                    // SSF specification
+        ["menggabungkanI", true, { teal: 0, green: 0, purple: 0, blue: 0, red: 0 }, {weighting: 1.1}],    // Implmentation
+        ["menggabungkanJ", false, 20, {weighting: 1.1}],                                                  // Single slot finality (SSF)
+        ["menggabungkanK", true, { teal: 0, green: 0, purple: 0, blue: 10, red: 40 }, {weighting: 1.1}],  // Increase validator count
+        ["menggabungkanL", false, 20, {weighting: 1}],                                                    // Ideal quantum-safe signatures
     ],
     surge: [
         ["surgeA", true, { teal: 66.66, green: 0, purple: 0, blue: 0, red: 0 }, {weighting: 1}],  // Optimistic rollup fraud provers
@@ -449,14 +449,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //Code for Eth Price in corner NO API Key
 function fetchEthPrice() {
-  fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd')
+  fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
     .then(response => response.json())
     .then(data => {
-      const ethPrice = data.ethereum.usd;
-      const priceElement = document.getElementById('eth-price');
-      priceElement.textContent = `$${Math.round(ethPrice)}`;
+      const ethPrice = data.bitcoin.usd;
+      const priceElement = document.getElementById('btc-price');
+      priceElement.textContent = `$${Math.round(btcPrice)}`;
     })
-    .catch(error => console.error('Error fetching ETH price:', error));
+    .catch(error => console.error('Error fetching BTC price:', error));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
