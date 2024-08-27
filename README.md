@@ -6,4 +6,5 @@ https://business.facebook.com/settings/pages/?business_id=463899319955629 Kafe G
 https://www.facebook.com/settings?tab=profile&section=name&view Pengaturan nama
 
 Konsisten untuk repositori setiap hari kelihatannya mudah, tetapi butuh ide untuk menambahkan.
+
 Hari ini tanggal 28.08.2024 harga Bitcoin 1 BTC = 954.410.373 IDR
